@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_29d34befd34a918cc52c5d96a4f1f7eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_29d34befd34a918cc52c5d96a4f1f7eb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_29d34befd34a918cc52c5d96a4f1f7eb = L.map(
+                "map_29d34befd34a918cc52c5d96a4f1f7eb",
+                {
+                    center: [-29.372299999999996, 26.963839999999998],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1af02f0389605f0008dd71a0aeb5f05c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1af02f0389605f0008dd71a0aeb5f05c.addTo(map_29d34befd34a918cc52c5d96a4f1f7eb);
+        
+    
+            var marker_492e5470a3742ef266d29c64fe7ef814 = L.marker(
+                [-26.2041, 28.0473],
+                {"label": ["Active Projects"]}
+            ).addTo(map_29d34befd34a918cc52c5d96a4f1f7eb);
+        
+    
+        var popup_593bc4ae7668595939f76648f47b078c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a356665df1962487f559f34d25595bb = $(`<div id="html_4a356665df1962487f559f34d25595bb" style="width: 100.0%; height: 100.0%;">Name:Project A<br>Contribution: 1998202</div>`)[0];
+                popup_593bc4ae7668595939f76648f47b078c.setContent(html_4a356665df1962487f559f34d25595bb);
+            
+        
+
+        marker_492e5470a3742ef266d29c64fe7ef814.bindPopup(popup_593bc4ae7668595939f76648f47b078c)
+        ;
+
+        
+    
+    
+            marker_492e5470a3742ef266d29c64fe7ef814.bindTooltip(
+                `<div>
+                     Project A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31e36805feec802dcc25d3182ba925e2 = L.marker(
+                [-33.9249, 18.4241],
+                {"label": ["Active Projects"]}
+            ).addTo(map_29d34befd34a918cc52c5d96a4f1f7eb);
+        
+    
+        var popup_116a823183db8877f308fe22858287d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3219fef346ce07ea548588a686e85cb8 = $(`<div id="html_3219fef346ce07ea548588a686e85cb8" style="width: 100.0%; height: 100.0%;">Name:Project B<br>Contribution: 1698270</div>`)[0];
+                popup_116a823183db8877f308fe22858287d0.setContent(html_3219fef346ce07ea548588a686e85cb8);
+            
+        
+
+        marker_31e36805feec802dcc25d3182ba925e2.bindPopup(popup_116a823183db8877f308fe22858287d0)
+        ;
+
+        
+    
+    
+            marker_31e36805feec802dcc25d3182ba925e2.bindTooltip(
+                `<div>
+                     Project B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbfbafbfecf9fb0473ebdc182b65eae1 = L.marker(
+                [-29.8587, 31.0218],
+                {"label": ["Active Projects"]}
+            ).addTo(map_29d34befd34a918cc52c5d96a4f1f7eb);
+        
+    
+        var popup_df4772d25ef642218406af60cf271248 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8fbbdc0c7b96d4ef9dc4f4f9ccaf716c = $(`<div id="html_8fbbdc0c7b96d4ef9dc4f4f9ccaf716c" style="width: 100.0%; height: 100.0%;">Name:Project C<br>Contribution: 1698379</div>`)[0];
+                popup_df4772d25ef642218406af60cf271248.setContent(html_8fbbdc0c7b96d4ef9dc4f4f9ccaf716c);
+            
+        
+
+        marker_dbfbafbfecf9fb0473ebdc182b65eae1.bindPopup(popup_df4772d25ef642218406af60cf271248)
+        ;
+
+        
+    
+    
+            marker_dbfbafbfecf9fb0473ebdc182b65eae1.bindTooltip(
+                `<div>
+                     Project C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36c5d978b69bdf3b166845d01eb40995 = L.marker(
+                [-32.9693, 27.8571],
+                {"label": ["Active Projects"]}
+            ).addTo(map_29d34befd34a918cc52c5d96a4f1f7eb);
+        
+    
+        var popup_37e5fc7a8f1e21186b74fca96c018378 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e6cfcc58912acde6217d7f5c03393b0 = $(`<div id="html_7e6cfcc58912acde6217d7f5c03393b0" style="width: 100.0%; height: 100.0%;">Name:Project D<br>Contribution: 1838417</div>`)[0];
+                popup_37e5fc7a8f1e21186b74fca96c018378.setContent(html_7e6cfcc58912acde6217d7f5c03393b0);
+            
+        
+
+        marker_36c5d978b69bdf3b166845d01eb40995.bindPopup(popup_37e5fc7a8f1e21186b74fca96c018378)
+        ;
+
+        
+    
+    
+            marker_36c5d978b69bdf3b166845d01eb40995.bindTooltip(
+                `<div>
+                     Project D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42fd03d6e2071d24c56a124ec03766e5 = L.marker(
+                [-23.9045, 29.4689],
+                {"label": ["Active Projects"]}
+            ).addTo(map_29d34befd34a918cc52c5d96a4f1f7eb);
+        
+    
+        var popup_ca467d5e05704799a2a7f1c564414920 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aa812195504ab18fda5beb38d6f31442 = $(`<div id="html_aa812195504ab18fda5beb38d6f31442" style="width: 100.0%; height: 100.0%;">Name:Project E<br>Contribution: 1713761</div>`)[0];
+                popup_ca467d5e05704799a2a7f1c564414920.setContent(html_aa812195504ab18fda5beb38d6f31442);
+            
+        
+
+        marker_42fd03d6e2071d24c56a124ec03766e5.bindPopup(popup_ca467d5e05704799a2a7f1c564414920)
+        ;
+
+        
+    
+    
+            marker_42fd03d6e2071d24c56a124ec03766e5.bindTooltip(
+                `<div>
+                     Project E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
